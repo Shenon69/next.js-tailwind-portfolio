@@ -57,7 +57,7 @@ export default function Home() {
               Trishan Phillipsz
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-              Front-end Developer
+              Loves Shimara Ferdinandez
             </h3>
             <p className="text-md py-5 leading-7 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
               I&apos;m an undergraduate student with a passion for front-end
