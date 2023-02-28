@@ -3,7 +3,6 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
-  AIFillYoutube,
   AiFillYoutube,
 } from "react-icons/ai";
 import Image from "next/image";
@@ -20,8 +19,7 @@ import web6 from "../public/web6.png";
 import { useState } from "react";
 
 export default function Home() {
-
-  const [darkMode,setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -34,11 +32,15 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen ">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons cursor-pointer dark:text-white">STGPhillipsz</h1>
+            <h1 className="text-xl font-burtons cursor-pointer dark:text-white">
+              STGPhillipsz
+            </h1>
             <ul className="flex items-center">
               <li>
-                {" "}
-                <BsFillMoonStarsFill className="text-xl dark:text-white cursor-pointer" onClick={() => setDarkMode(!darkMode)} />{" "}
+                <BsFillMoonStarsFill
+                  className="text-xl dark:text-white cursor-pointer"
+                  onClick={() => setDarkMode(!darkMode)}
+                />
               </li>
               <li>
                 <a
@@ -54,7 +56,9 @@ export default function Home() {
             <h2 className="text-4xl text-teal-600 font-medium md:text-6xl">
               Trishan Phillipsz
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Front-end Developer</h3>
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+              Front-end Developer
+            </h3>
             <p className="text-md py-5 leading-7 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
               I'm an undergraduate student with a passion for front-end
               development and a deep love for software engineering.
@@ -66,13 +70,15 @@ export default function Home() {
             <AiFillYoutube />
           </div>
           <div className="relative overflow-hidden bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto md:h-96 md:w-96">
-            <Image src={deved} layout="fill" objectFit="cover" />
+            <Image src={deved} layout="fill" objectFit="cover" alt="avatar" />
           </div>
         </section>
 
         <section>
           <div>
-            <h3 className="text-3xl pt-10 pb-5 dark:text-white">Services I offer</h3>
+            <h3 className="text-3xl pt-10 pb-5 dark:text-white">
+              Services I offer
+            </h3>
             <p className="text-md leading-7 text-gray-700 dark:text-white">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
@@ -166,23 +172,58 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div >
-              <Image src={web1} />
+            <div>
+              <Image src={web1} alt="web-1" />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web2} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
+              <Image
+                src={web2}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web-2"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web3} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
+              <Image
+                src={web3}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web-3"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web4} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
+              <Image
+                src={web4}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web-4"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web5} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
+              <Image
+                src={web5}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web-5"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web6} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
+              <Image
+                src={web6}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt="web-6"
+              />
             </div>
           </div>
         </section>
